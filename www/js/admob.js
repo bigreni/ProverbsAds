@@ -79,8 +79,8 @@
     //    return parseInt(items[i].value);
     //}
     function createSelectedBanner() {
-        var overlap = document.getElementById('overlap').checked;
-        var offsetTopBar = document.getElementById('offsetTopBar').checked;
+        //var overlap = document.getElementById('overlap').checked;
+        //var offsetTopBar = document.getElementById('offsetTopBar').checked;
         //AdMob.createBanner( {adId:admobid.banner, overlap:overlap, offsetTopBar:offsetTopBar, adSize: getSelectedAdSize(), position:getSelectedPosition()} );
         AdMob.createBanner({adId:admobid.banner});
     }
