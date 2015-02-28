@@ -45,25 +45,25 @@ button {
             <a href="Languages/German.html" class="langOption"><h1 class="selectLanguage">German</h1></a>
             <a href="Languages/Spanish.html" class="langOption"><h1 class="selectLanguage">Spanish</h1></a>
         </div>
-		Banner<br /> Standard: <select id="adSize" hidden="hidden">
+		<br /> <select id="adSize" hidden="hidden">
 			<option value='SMART_BANNER'>SMART_BANNER</option>
 			<option value='BANNER'>BANNER</option>
 			<option value='MEDIUM_RECTANGLE'>MEDIUM_RECTANGLE</option>
 			<option value='FULL_BANNER'>FULL_BANNER</option>
 			<option value='LEADERBOARD'>LEADERBOARD</option>
 			<option value='SKYSCRAPER'>SKYSCRAPER</option>
-		</select><br /> <input type='checkbox' id='overlap' hidden="hidden"/>overlap<br/>
-         <input type='checkbox' id='offsetTopBar' hidden="hidden"/>offsetTopBar<br/>
-		<button onclick="createSelectedBanner();">create</button>
-		<br /> Custom Size: (<input id='w' type='text' size=3 /> x <input
-			id='h' type='text' size=3>)
-		<button onclick="createBannerOfGivenSize();">create</button>
+		</select><br /> <input type='checkbox' id='overlap' hidden="hidden"/><br/>
+         <input type='checkbox' id='offsetTopBar' hidden="hidden"/><br/>
+		<button onclick="createSelectedBanner();" hidden="hidden"></button>
+		<br /> <input id='w' type='text' size=3 hidden="hidden"/> <input
+			id='h' type='text' size=3 hidden="hidden">
+		<button onclick="createBannerOfGivenSize();" hidden="hidden"></button>
 		<br />
 
-		<button onclick="AdMob.removeBanner();">remove banner</button>
+		<button onclick="AdMob.removeBanner();" hidden="hidden"></button>
 
 		<hr />
-		<select id="adPosition">
+		<select id="adPosition" hidden="hidden">
 			<option value='1'>Top Left</option>
 			<option value='2'>Top Center</option>
 			<option value='3'>Top Right</option>
@@ -74,19 +74,18 @@ button {
 			<option value='8' selected>Bottom Center</option>
 			<option value='9'>Bottom Right</option>
 		</select>
-		<button onclick="showBannerAtSelectedPosition();">show</button>
-		<br /> (<input id='x' type='text' size=3 />,<input id='y'
-			type='text' size=3>)
-		<button onclick="showBannerAtGivenXY();">show At XY</button>
+		<button onclick="showBannerAtSelectedPosition();" hidden="hidden"></button>
+		<br /> <input id='x' type='text' size=3 hidden="hidden"/>,<input id='y'
+			type='text' size=3 hidden="hidden">
+		<button onclick="showBannerAtGivenXY();" hidden="hidden"></button>
 		<br />
 
-		<button onclick="AdMob.hideBanner();">hide banner</button>
+		<button onclick="AdMob.hideBanner();" hidden="hidden"></button>
 		<hr />
 
-		<p>Interstitial</p>
-		<input type='checkbox' id='autoshow' checked />auto show when ready<br />
-		<button onclick="prepareInterstitial();">Prepare</button>
-		<button onclick="AdMob.showInterstitial();">Show</button>
+		<input type='checkbox' id='autoshow' checked hidden="hidden"/><br />
+		<button onclick="prepareInterstitial();" hidden="hidden"></button>
+		<button onclick="AdMob.showInterstitial();" hidden="hidden"></button>
 		<div id='sizeinfo'></div>
 	</div>
 </body>
