@@ -5,9 +5,9 @@ version="1.0.0"
 xmlns="http://www.w3.org/ns/widgets"
 xmlns:gap="http://phonegap.com/ns/1.0"
 >
-    <name>Hello World</name>
+    <name>Proverbs with Ads</name>
     <description>
-        Hello World sample application that responds to the deviceready event.
+        Proverbs app with Ads.
     </description>
     <author email="support@phonegap.com" href="http://phonegap.com">
         PhoneGap Team
