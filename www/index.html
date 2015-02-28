@@ -49,17 +49,7 @@ button {
 			banner: 'ca-app-pub-9249695405712287/3154959152',
 			interstitial: 'ca-app-pub-9249695405712287/3301233156'
 		};
-	} else if(/(ipod|iphone|ipad)/i.test(navigator.userAgent)) {
-		admobid = { // for iOS
-			banner: 'ca-app-pub-6869992474017983/4806197152',
-			interstitial: 'ca-app-pub-6869992474017983/7563979554'
-		};
-	} else {
-		admobid = { // for Windows Phone
-			banner: 'ca-app-pub-6869992474017983/8878394753',
-			interstitial: 'ca-app-pub-6869992474017983/1355127956'
-		};
-	}
+	} 
         
     function initApp() {
 		if (! AdMob ) { alert( 'admob plugin not ready' ); return; }
@@ -159,7 +149,14 @@ button {
     }
 </script>
 	<div id="fullpage">
-		<p>Demo for AdMob Plugin</p>
+		<p>Proverbs</p>
+        <div>
+            <span>Select a language</span>
+            <a href="Languages/English.html" class="langOption"><h1 class="selectLanguage">English</h1></a>
+            <a href="Languages/French.html" class="langOption"><h1 class="selectLanguage">French</h1></a>
+            <a href="Languages/German.html" class="langOption"><h1 class="selectLanguage">German</h1></a>
+            <a href="Languages/Spanish.html" class="langOption"><h1 class="selectLanguage">Spanish</h1></a>
+        </div>
 		Banner<br /> Standard: <select id="adSize">
 			<option value='SMART_BANNER'>SMART_BANNER</option>
 			<option value='BANNER'>BANNER</option>
