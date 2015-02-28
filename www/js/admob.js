@@ -105,7 +105,3 @@
     //    var autoshow = document.getElementById('autoshow').checked;
     //    AdMob.prepareInterstitial({ adId: admobid.interstitial, autoShow: autoshow });
     //}
-    function onResize() {
-        var s = document.getElementById('sizeinfo');
-        s.innerHTML = "web view: " + window.innerWidth + " x " + window.innerHeight;
-    }

@@ -10,7 +10,7 @@
 <script type="text/javascript" src="cordova.js"></script>
 <script type="text/javascript" src="js/admob.js"></script>
 </head>
-<body onload="onLoad()" onresize="onResize()">
+<body onload="onLoad()">
 
 	<div id="fullpage">
 		<p>Proverbs</p>
@@ -21,6 +21,7 @@
             <a href="Languages/German.html" class="langOption"><h1 class="selectLanguage">German</h1></a>
             <a href="Languages/Spanish.html" class="langOption"><h1 class="selectLanguage">Spanish</h1></a>
         </div>
+
 		<br /> <select id="adSize" hidden="hidden">
 			<option value='SMART_BANNER'>SMART_BANNER</option>
 			<option value='BANNER'>BANNER</option>
@@ -30,13 +31,10 @@
 			<option value='SKYSCRAPER'>SKYSCRAPER</option>
 		</select><br /> <input type='checkbox' id='overlap' hidden="hidden"/><br/>
          <input type='checkbox' id='offsetTopBar' hidden="hidden"/><br/>
-		<button onclick="createSelectedBanner();" hidden="hidden"></button>
+
 		<br /> <input id='w' type='text' size=3 hidden="hidden"/> <input
 			id='h' type='text' size=3 hidden="hidden">
-		<button onclick="createBannerOfGivenSize();" hidden="hidden"></button>
-		<br />
 
-		<button onclick="AdMob.removeBanner();" hidden="hidden"></button>
 
 		<hr />
 		<select id="adPosition" hidden="hidden">
@@ -50,19 +48,15 @@
 			<option value='8' selected>Bottom Center</option>
 			<option value='9'>Bottom Right</option>
 		</select>
-		<button onclick="showBannerAtSelectedPosition();" hidden="hidden"></button>
+
 		<br /> <input id='x' type='text' size=3 hidden="hidden"/>,<input id='y'
 			type='text' size=3 hidden="hidden">
-		<button onclick="showBannerAtGivenXY();" hidden="hidden"></button>
 		<br />
 
-		<button onclick="AdMob.hideBanner();" hidden="hidden"></button>
 		<hr />
 
 		<input type='checkbox' id='autoshow' checked hidden="hidden"/><br />
-		<button onclick="prepareInterstitial();" hidden="hidden"></button>
-		<button onclick="AdMob.showInterstitial();" hidden="hidden"></button>
-		<div id='sizeinfo'></div>
+
 	</div>
 </body>
 </html>
