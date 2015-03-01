@@ -7,18 +7,27 @@
 <meta name="viewport"
 	content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
 <title>English Proverbs</title>
+
+<!-- Include jQuery Mobile stylesheets -->
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<!-- Include the jQuery library -->
+<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+<!-- Include the jQuery Mobile library -->
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
 <link rel="stylesheet" type="text/css" href="../css/index.css" />
 <script type="text/javascript" src="cordova.js"></script>
 </head>
     <body>
-        	<div id="fullpage">
-                <p>
-                   <a href="../index.html" class="backButton">< Go Back</a>
-                </p>
+        	<div id="fullpage" data-role="page">
+  
+                <div data-role="main" class="ui-content">
+                    <a href="../index.html" class="ui-btn ui-btn-b" data-rel="back">Go Back</a>
+                </div>
+
                 <li>
                 <h3 class='proverbTitle'>"Two wrongs don't make a right."</h3>
                 When someone has done something bad to you, trying to get revenge will only make things worse.<br>
-                <br>
                 </li>
                 <li>
                 <h3 class='proverbTitle'>"The pen is mightier than the sword."</h3>
