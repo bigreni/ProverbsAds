@@ -80,7 +80,7 @@ p.title{
 
 h1.selectLanguage {
     margin: 10px 0 10px 0;
-    background-color: #ccefdb;
+    /*background-color: #ccefdb;*/
 }
 
 /* Landscape layout (with min-width) */
