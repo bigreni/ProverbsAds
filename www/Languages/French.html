@@ -25,7 +25,11 @@
                 <div data-role="main" class="ui-content">
                     <a href="../index.html" class="ui-btn ui-btn-b" data-rel="back">Go Back</a>
                 </div>
-        <li>
+                <form class="ui-filterable">
+                    <input id="myFilter" data-type="search">
+                </form>
+                <ul id="lstProverbs" data-role="listview" data-filter="true" data-input="#myFilter">
+                <li>
                 <h3 class='proverbTitle'>"Qui vivra verra."</h3>
                 A widely used and understood proverb that literally means, “He/she who lives, shall see.” This phrase is usually used when an outcome is unpredictable or uncertain, like in the English “the future will tell.”<br>
                 </li>

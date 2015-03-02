@@ -25,7 +25,10 @@
                     <a href="../index.html" class="ui-btn ui-btn-b" data-rel="back">Go Back</a>
                 </div>
                 <div data-role="content">
-                <ul id="lstLanguages" data-role="listview">
+                    <form class="ui-filterable">
+                        <input id="myFilter" data-type="search">
+                    </form>
+                <ul id="lstProverbs" data-role="listview" data-filter="true" data-input="#myFilter">
                 <li>
                 <h3 class='proverbTitle'>"Two wrongs don't make a right."</h3>
                 When someone has done something bad to you, trying to get revenge will only make things worse.<br>

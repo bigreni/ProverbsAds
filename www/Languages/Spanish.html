@@ -25,7 +25,11 @@
                 <div data-role="main" class="ui-content">
                     <a href="../index.html" class="ui-btn ui-btn-b" data-rel="back">Go Back</a>
                 </div>
-        <li>
+                    <form class="ui-filterable">
+                        <input id="myFilter" data-type="search">
+                    </form>
+                <ul id="lstProverbs" data-role="listview" data-filter="true" data-input="#myFilter">
+                <li>
                 <h3 class='proverbTitle'>"A Dios rogando y con el mazo dando."</h3>
                 Literal translation: “Praying to God and hitting with the hammer.” 
                 Covering all the bases. Doing everything necessary to ensure success.<br>
