@@ -63,12 +63,18 @@ a.backButton{
     text-decoration: initial;
 }
 
+ul li h3 {
+    white-space: normal;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
 h3.proverbTitle {
     background-color: #ccefdb;
 }
 
 a.backButton {
-        background-color: #ccefdb;
+    background-color: #ccefdb;
 }
 
 p.title{
@@ -82,6 +88,14 @@ h1.selectLanguage {
     margin: 10px 0 10px 0;
     /*background-color: #ccefdb;*/
 }
+
+.ui-page .ui-content .ui-listview .ui-li-desc {
+    white-space : normal;
+}
+
+.ui-page .ui-content .ui-listview .ui-li-heading {
+    white-space : normal;
+}​​
 
 /* Landscape layout (with min-width) */
 @media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
