@@ -63,12 +63,6 @@ a.backButton{
     text-decoration: initial;
 }
 
-ul li h3 {
-    white-space: normal;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-}
-
 h3.proverbTitle {
     background-color: #ccefdb;
 }
